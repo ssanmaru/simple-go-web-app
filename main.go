@@ -15,6 +15,7 @@ func main() {
 
 	m := martini.Classic()
 	m.Get("/", func() string {
+		fmt.Println("Hello there")
 		fmt.Println(message)
 		return message
 	})
