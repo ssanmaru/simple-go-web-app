@@ -7,10 +7,11 @@ import (
 )
 
 func TestThis(t *testing.T) {
-  fmt.Println("hello there")
-  t := time.Now()
-    y, mon, d := t.Date()
-    h, m, s := t.Clock()
+    fmt.Println("Say Hello there concourse, iam from Go")
+    t.Log("Say bye")
+  p := time.Now()
+    y, mon, d := p.Date()
+    h, m, s := p.Clock()
     fmt.Println("Year: ", y)
     fmt.Println("Month: ", mon)
     fmt.Println("Day: ", d)
